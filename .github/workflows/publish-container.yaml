@@ -10,9 +10,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build and push the image
         run: |
-          docker login --username <github-username-goes-here> --password ${secrets.GH_PAT} ghcr.io
-          docker build . --tag ghcr.io/<github-name-goes-here>/<image-name-goes-here>:latest
-          docker push ghcr.io/<github-name-goes-here>/<image-name-goes-here>:latest
+          docker login --username nargesnavidi --password ${{secrets.GH_PAT}} ghcr.io
+          docker build . --tag ghcr.io/nargesnavidi/boxlang-ghcr-test:latest
+          docker push ghcr.io/nargesnavidi/boxlang-ghcr-test:latest
       - name: Render.com Redeploy Webhook
         uses: fjogeleit/http-request-action@v1
         with:
