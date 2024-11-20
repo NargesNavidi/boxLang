@@ -16,5 +16,5 @@ jobs:
       - name: Render.com Redeploy Webhook
         uses: fjogeleit/http-request-action@v1
         with:
-          url: 'https://google.com'
+          url: 'https://api.render.com/deploy/srv-csv328lds78s73ft85d0?key=3yPS0m3U-b4'
           method: 'GET'
