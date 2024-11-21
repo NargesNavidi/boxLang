@@ -1,6 +1,17 @@
 class {
 	this.name = "boxlang test app";
 
+	this.datasources = {
+        "box-lang-test" = {
+            "database": "postgres",
+            "driver": "postgresql",
+            "host": "boxlang-test1.ch4qs4qowxpt.us-east-1.rds.amazonaws.com",
+            "password": "${env.DB_PASSWORD}",
+            "port": "5432",
+            "username": "main"
+        }
+    }
+
 	function onApplicationStart(){
 		application.test = true;
 	}

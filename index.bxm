@@ -1,3 +1,9 @@
+<bx:script>
+qry = QueryExecute(
+    sql="select * from testtable;",
+    options={datasource:"NAME_YOUR_DATASOURCE"}
+)
+</bx:script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,6 +45,7 @@
         <p>Server IP Address: <bx:output>#cgi.SERVER_NAME#</bx:output></p>
         <p>Server Port: <bx:output>#cgi.SERVER_PORT#</bx:output></p>
         <p>Application Test Variable Value: <bx:output>#application.test#</bx:output></p> 
+        <bx:dump var="#qry#" />
     </div>
 </body>
 </html>
