@@ -1,11 +1,11 @@
 class {
 	this.name = "boxlang test app";
 
-	this.datasources = {
+		this.datasources = {
         "box-lang-test" = {
             "database": "postgres",
             "driver": "postgresql",
-            "host": "boxlang-test1.ch4qs4qowxpt.us-east-1.rds.amazonaws.com",
+            "host": "boxlang-test1.chc6iwi4od4d.us-east-2.rds.amazonaws.com",
             "password": "${env.DB_PASSWORD}",
             "port": "5432",
             "username": "main"

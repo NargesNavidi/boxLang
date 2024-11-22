@@ -1,7 +1,7 @@
 <bx:script>
 qry = QueryExecute(
     sql="select * from testtable;",
-    options={datasource:"NAME_YOUR_DATASOURCE"}
+    options={datasource:"box-lang-test"}
 )
 </bx:script>
 <!DOCTYPE html>
